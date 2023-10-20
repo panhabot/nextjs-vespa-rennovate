@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Karla } from "next/font/google";
 import "./globals.css";
 import Nav from "./nav";
+import { Suspense } from "react";
 
 const popin = Karla({ subsets: ["latin"] });
 
@@ -17,9 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${popin.className} px-4`}>
+      <body className={`${popin.className} relative px-4 max-h-screen `}>
         <Nav />
-        {children}
+        <div>{children}</div>
       </body>
     </html>
   );

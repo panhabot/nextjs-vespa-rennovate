@@ -50,6 +50,7 @@ export default function Home() {
               src="/bg1.jpg"
               width={350}
               className=" rounded-[10px]"
+              loading="lazy"
               height={250}
               alt="vespa one"
             />

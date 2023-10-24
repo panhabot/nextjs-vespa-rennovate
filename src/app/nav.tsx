@@ -27,7 +27,7 @@ export default function Nav() {
   const handleMenuClick = () => {
     setIsOpen(!isOpen);
   };
-  console.log(isOpen);
+
   return (
     <>
       <div className="hidden md:flex w-full h-[45px] justify-center mt-4 items-center bg-white rounded-xl  z-10">
